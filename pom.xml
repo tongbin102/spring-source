@@ -33,12 +33,28 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>com.chenlb.mmseg4j</groupId>
+			<artifactId>mmseg4j-analysis</artifactId>
+			<version>1.9.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.chenlb.mmseg4j/mmseg4j-core -->
+		<dependency>
+			<groupId>com.chenlb.mmseg4j</groupId>
+			<artifactId>mmseg4j-core</artifactId>
+			<version>1.10.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- AOP配置相关-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>

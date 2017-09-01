@@ -1,16 +1,19 @@
 package com.sunliangliang.springsource.controller;
 
+import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by sunliangliang on 2017/7/22.
+ * created by sunliangliang
  */
 @RestController
 public class HomeController {
-    @GetMapping("/")
-    public String home(){
-
-        return "Hello world!";
+    private Logger logger = Logger.getLogger(getClass());
+    @GetMapping("/index")
+    public String index(@RequestParam String name){
+        logger.info("-----------{name}:{}"+name);
+        return "【welcome to aop】:" +name;
     }
 }
